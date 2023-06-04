@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="16dp"
+tools:context=".MainActivity">
+
+<TextView
+    android:id="@+id/headingTextView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Weekly Report"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    android:layout_marginBottom="16dp"/>
+
+<TextView
+    android:id="@+id/foodTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Food"
+    android:textSize="18sp"
+    android:layout_below="@id/headingTextView"/>
+
+    <EditText
+        android:id="@+id/foodEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodTextView"
+        android:layout_marginBottom="16dp"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+<TextView
+    android:id="@+id/travelTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Travel"
+    android:textSize="18sp"
+    android:layout_below="@id/foodEditText"/>
+
+    <EditText
+        android:id="@+id/travelEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/travelTextView"
+        android:layout_marginBottom="16dp"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+<TextView
+    android:id="@+id/shoppingTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Shopping"
+    android:textSize="18sp"
+    android:layout_below="@id/travelEditText"/>
+
+    <EditText
+        android:id="@+id/shoppingEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shoppingTextView"
+        android:layout_marginBottom="16dp"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+<TextView
+    android:id="@+id/groceriesTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Groceries"
+    android:textSize="18sp"
+    android:layout_below="@id/shoppingEditText"/>
+
+    <EditText
+        android:id="@+id/groceriesEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/groceriesTextView"
+        android:layout_marginBottom="16dp"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+<TextView
+    android:id="@+id/otherTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Other"
+    android:textSize="18sp"
+    android:layout_below="@id/groceriesEditText"/>
+
+    <EditText
+        android:id="@+id/otherEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/otherTextView"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+</RelativeLayout>

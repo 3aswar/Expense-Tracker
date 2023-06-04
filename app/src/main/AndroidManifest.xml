@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/my_splash_image"
+        android:label="ET"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.T"
+        tools:targetApi="31">
+        <activity
+            android:name=".PieActivity"
+            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".monthActivity"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".weekeActivity"-->
+<!--            android:exported="false" />-->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="false" />
+
+        <receiver
+            android:name=".NewAppWidget"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/new_app_widget_info" />
+        </receiver>
+
+<!--        <activity-->
+<!--            android:name=".ui.login.aaAAAActivity"-->
+<!--            android:exported="false"-->
+<!--            android:label="@string/title_activity_aa_aaaactivity" />-->
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TotalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AnalyzeActivity"
+            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".AnalysisActivity"-->
+<!--            android:exported="false" />-->
+        <activity
+            android:name=".home"
+            android:exported="false" />
+        <activity
+            android:name=".ReseatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FoodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TravelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GroceriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ShoppingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OtherActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
